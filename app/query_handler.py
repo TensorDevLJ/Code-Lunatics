@@ -4,8 +4,8 @@ def ask_cohere(text: str, question: str, api_key: str):
     co = cohere.Client(api_key)
 
     prompt = f"""
-You are a legal insurance policy assistant. Carefully read the policy document and answer the user's question clearly and accurately.
-
+You are a professional insurance policy assistant. You are given a policy document and a user's question.
+Give a clear and precise answer only based on the content provided below.
 Policy Document:
 {text[:10000]}
 
